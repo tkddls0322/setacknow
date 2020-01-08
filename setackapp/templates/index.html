@@ -1,4 +1,6 @@
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -22,7 +24,7 @@
     <p class="lead">Let's see how many washing machines are in operation.</p>
       <p class="lead">You can also receive alarms through login.</p>
     <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary">LET'S SEE</a>
+      <a href="{% url 'laundry' %}" class="btn btn-lg btn-secondary">LET'S SEE</a>
       <a href="#" class="btn btn-lg btn-secondary">KAKAO LOGIN</a>
     </p>
   </main>

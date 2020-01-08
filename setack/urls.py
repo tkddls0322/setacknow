@@ -18,6 +18,7 @@ from django.urls import path
 import setackapp.views
 
 urlpatterns = [
-#    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', setackapp.views.index, name='index'),
+    path('laundry/', setackapp.views.laundry, name='laundry'),
 ]
