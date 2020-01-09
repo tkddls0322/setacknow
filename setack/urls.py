@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import setackapp.views
+from django.contrib.auth import views as auth_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', setackapp.views.index, name='index'),
     path('laundry/', setackapp.views.laundry, name='laundry'),
-]
+    path('',auth_views.LogoutView.as_view(),name="logout"),]
