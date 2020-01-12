@@ -18,7 +18,7 @@ from django.urls import path,include
 import setackapp.views
 from django.contrib.auth import views as auth_views
 
-
+app_name="main"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', setackapp.views.index, name='index'),
