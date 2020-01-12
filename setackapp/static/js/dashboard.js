@@ -28,7 +28,7 @@
           24003,
           23489,
           24092,
-          12034
+          9034
         ],
         lineTension: 0,
         backgroundColor: 'transparent',
