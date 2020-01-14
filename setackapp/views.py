@@ -6,3 +6,6 @@ def index(request):
 
 def laundry(request):
     return render(request, 'laundry.html')
+
+def login(request):
+    return render(request, 'login.html')

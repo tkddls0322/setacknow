@@ -24,4 +24,4 @@ urlpatterns = [
     path('', setackapp.views.index, name='index'),
     path('laundry/', setackapp.views.laundry, name='laundry'),
     path('',auth_views.LogoutView.as_view(),name="logout"),
-    path('account/',include('account.urls'))]
+    path('signup/',setackapp.views.login, name="login")]
