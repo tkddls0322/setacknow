@@ -6,3 +6,4 @@ def index(request):
 
 def laundry(request):
     return render(request, 'laundry.html')
+
