@@ -22,9 +22,9 @@ def login(request):
             auth.login(request,user)
             return redirect("index")
         else:
-            return render(request,"login.html",{'error':'username or password is incorrect'})
+            return render(request,"loginpage.html",{'error':'username or password is incorrect'})
     else:
-        return render(request, 'login.html')
+        return render(request, 'account/loginpage.html')
 
 def logout(request):
     auth.logout(request)
