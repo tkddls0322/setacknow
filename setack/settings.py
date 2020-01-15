@@ -136,7 +136,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'setackapp', 'static')
-,    os.path.join(BASE_DIR,'acount')
-]
+,    os.path.join(BASE_DIR,'account','static')
+    ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
