@@ -30,12 +30,12 @@ def signup(request):
 
 def login(request):
     if request.method=="POST":
-        username=request.POST["sid"]
-        password=request.POST["pw"]
+        username=request.POST.get("sid")
+        password=request.POST.get("pw1")
         user=auth.authenticate(request,username=username,password=password)
         if user is not None:
             auth.login(request,user)
-            return redirect("laundry.html")
+            return render(request,"setackapp/laundry.html")
         else:
             return render(request,"loginpage.html",{'error':'username or password is incorrect'})
     else:
