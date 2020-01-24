@@ -185,11 +185,14 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #0250c5;
-  background: -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
-  background: -o-linear-gradient(bottom, #0250c5, #d43f8d);
-  background: -moz-linear-gradient(bottom, #0250c5, #d43f8d);
-  background: linear-gradient(bottom, #0250c5, #d43f8d);
+  /*background color
+  background: #9b2300;
+  background: -webkit-linear-gradient(bottom, #9b2300, #000000);
+  background: -o-linear-gradient(bottom, #9b2300, #000000);
+  background: -moz-linear-gradient(bottom, #9b2300, #000000);
+  background: linear-gradient(bottom, #9b2300, #000000);
+  */
+  background-image: image(../images/star1.peg);
   position: relative;
   z-index: 1;
 }
@@ -204,6 +207,7 @@ iframe {
   top: 0;
   left: 0;
   background-image: url('../images/img-01.png');
+  background-image: url('../images/starimg1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

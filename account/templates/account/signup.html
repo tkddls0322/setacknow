@@ -1,11 +1,82 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Signup Page</title>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+    body{
+        background-color: #ffffff;
+
+    }
+</style>
 </head>
-<body>
+<body >
+
 <h1>Welcome SetackNow</h1>
 
+{% if error %}
+<p>{{ error }}</p>
+{% endif %}
+
+<form method="post" >
+    {% csrf_token %}
+    <div class="container">
+	<div class="row">
+		<div class="form-box">
+        <h1>Form <span>Registration</span></h1>
+    	    <form role="form" id="contact-form">
+            <!-- name field -->
+                <div class="form-group">
+                <div id="nameError" class="alert" role="alert"></div>
+                <label for="form-name-field" class="sr-only">Student Number</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                        <input type="text" class="form-control" id="sid" name="sid" value="" placeholder="Name">
+                    </div>
+                </div>
+            <!-- email field -->
+                <div class="form-group">
+                <div id="emailError" class="alert" role="alert"></div>
+                <label for="form-email-field" class="sr-only">Password</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                        <input type="password" class="form-control" id="pw1" name="pw1" value="" >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                <div id="emailError" class="alert" role="alert"></div>
+                <label for="form-email-field" class="sr-only">Check_Password</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                        <input type="password" class="form-control" id="pw2" name="pw2" value="" >
+                    </div>
+                </div>
+
+
+            <!-- phone field -->
+                <div class="form-group">
+                <div id="phoneError" class="alert" role="alert"></div>
+                <label for="form-phone-field" class="sr-only">Phone</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                        <input type="phone" class="form-control" id="pn" name="pn" value="" placeholder="Phone">
+                    </div>
+                </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> I agree to terms and condition.
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+    	    </form>
+		</div>
+	</div>
+</div>
+</form>
 </body>
 </html>
