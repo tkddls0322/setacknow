@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="setackapp/templates/contactstyle.css">-->
+    <title>Contact Page</title>
+    <style>
+    ul {
+        list-style: none;
+        text-align: center;
+    }
+        body {background-color: powderblue}
+        h1{height: 250px;
+            text-align: center}
+        ul{font-size:20px;
+            font-weight: 200;
+            }
+        a {
+            line-height: 200%;
+        }
+</style>
+
+</head>
+<body>
+{% csrf_token %}
+<h1> In case of error, Please Contact us</h1>
+<ul>
+    <li>
+        <a>company name</a>
+    </li>
+    <li>
+        <a>address</a>
+    </li>
+    <li>
+        <a>call number</a>
+    </li>
+</ul>
+</body>
+</html>
